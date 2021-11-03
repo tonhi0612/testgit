@@ -1,0 +1,429 @@
+/*apply toàn bộ website*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --textColor: rgb(206, 207, 211);
+}
+
+:root {
+    --menuColor: #144496;
+}
+
+:root {
+    --footerColor: rgb(143, 71, 74);
+}
+
+:root {
+    --mainColor: rgb(4, 20, 112);
+}
+
+:root {
+    --space: 30px;
+}
+
+
+/*phần chỉnh div lớn nhất*/
+
+.page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    width: 100%;
+}
+
+
+/*phần chỉnh menu*/
+
+.page__menu {
+    width: 100%;
+    height: 50px;
+    background-color: var(--menuColor);
+    position: fixed;
+    z-index: 2;
+    font-size: 20px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.page__menu--logo img {
+    display: block;
+    width: 175px;
+    margin-left: 10px;
+}
+
+.page__menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.page__menu li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.page__menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    line-height: 50px;
+}
+
+.page__menu--icon {
+    margin-right: 20px;
+}
+
+
+/*phần chỉnh nội dung website*/
+
+.page__content {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.page__content--section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: var(--space);
+}
+
+
+/*phần chỉnh footer*/
+
+.page__footer {
+    width: 100%;
+    height: 340px;
+    background-color: var(--footerColor);
+}
+
+
+/*PHẦN RIÊNG TỪNG PAGE*/
+
+
+/*PAGE home*/
+
+.page--slide {
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    background-color: cadetblue;
+}
+
+.page__content--tour {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tour--item {
+    height: 600px;
+    width: 380px;
+    min-width: 300px;
+    background-color: rgb(211, 233, 14);
+    padding-left: 10px;
+    border: 2px solid steelblue;
+    margin-bottom: var(--space);
+}
+
+.page__transition {
+    height: 300px;
+    width: 100%;
+    background-color: tomato;
+    position: relative;
+    z-index: 1;
+}
+
+.home_page .page__content--review {
+    margin-top: var(--space);
+    height: 500px;
+    width: 100%;
+    background-color: violet;
+    margin-bottom: var(--space);
+}
+
+.page__partner {
+    height: 90px;
+    background-color: gray;
+    margin-bottom: var(--space);
+}
+
+
+/*PAGE tour*/
+
+.tour_page .content {
+    padding-top: 50px;
+}
+
+
+/*PAGE book now*/
+
+.page__banner {
+    padding-top: 50px;
+    height: 310px;
+    width: 100%;
+    background-color: grey;
+    margin-bottom: var(--space);
+}
+
+.page__content--information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: var(--space);
+}
+
+.information--left {
+    background-color: hotpink;
+    height: 500px;
+    min-width: 500px;
+    flex: 1;
+}
+
+.information--right {
+    height: 500px;
+    min-width: 500px;
+    flex: 1;
+    background-color: rgb(47, 135, 138);
+}
+
+.page__content--book {
+    margin: 0 auto;
+    background-color: indigo;
+    height: 300px;
+    width: 500px;
+    margin-bottom: var(--space);
+}
+
+
+/*PAGE about us*/
+
+
+/*PAGE review*/
+
+.p1--review {
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.page__content--slide {
+    width: 900px;
+    background-color: rgb(102, 211, 219);
+    height: 384px;
+}
+
+.page__content--review_best {
+    margin-left: 30px;
+    width: 300px;
+    height: 384px;
+    background-color: rgb(209, 154, 45);
+}
+
+.page__content--image {
+    width: 300px;
+    height: 680px;
+    background-color: rgb(224, 139, 224);
+}
+
+.page__content--review {
+    margin-left: 30px;
+    width: 900px;
+    background-color: rgb(118, 118, 196);
+    height: 680px;
+}
+
+
+/*PAGE detail*/
+
+.page__banner {
+    padding-top: 50px;
+    background-color: thistle;
+    height: 310px;
+    width: 100%;
+    z-index: 1;
+}
+
+.part--right {
+    margin-left: 30px;
+    width: 400px;
+}
+
+.part--left {
+    width: 800px;
+}
+
+.page__content--video {/* rớt xuống không ở chính giữa*/
+    background-color: tomato;
+    height: 600px;
+}
+
+.page__content--book {
+    background-color: rgb(205, 243, 128);
+    height: 600px;
+}
+
+.page__content--discription {
+    background-color: aquamarine;
+    height: 900px;
+}
+
+.page__content--photos {
+    background-color: beige;
+    height: 250px;
+}
+
+.page__content--best {
+    margin-top: 50px;
+    background-color: azure;
+    height: 600px;
+}
+
+.page__content--map {
+    background-color: blanchedalmond;
+    height: 500px;
+}
+
+.page__content--other {
+    background-color: cadetblue;
+    height: 500px;
+}
+
+
+/*PAGE security*/
+
+.p1--security {
+    padding-top: 100px; 
+    z-index: 1;
+}
+
+.page__content--photo {
+    width: 800px;
+    background-color: lightseagreen;
+    height: 500px;
+}
+
+.page__content--other {
+    width: 400px;
+    background-color: khaki;
+    margin-left: 30px;
+    height: 500px;
+}
+
+.p2--security {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(118, 228, 151);
+}
+
+
+/*PAGE provision*/
+
+.page__content--content {
+    margin-top: 100px;
+    width: 100%;
+    height: 990px;
+    background-color: rgb(118, 228, 151);
+    z-index: 1;
+}
+
+
+/*chiều rộng nhỏ hơn hoặc bằng 480px thì*/
+/*chiều rộng nhỏ hơn hoặc bằng 1000px thì*/
+@media screen and (max-width: 1250px) {
+    :root {
+        --space: 30px;
+    }
+    .page__content--section{
+        margin-bottom: var(--space);
+    }
+    .page__content--slide{
+        margin-bottom: var(--space);
+    }
+    .page__content--image{
+        margin-bottom: var(--space);
+    }
+    .page__content--photo{
+        margin-bottom: var(--space);
+    }
+    .page__banner, .page__content--video, .page__content--discription, .page__content--map, .tour--item  {
+        margin-bottom: var(--space);
+    }
+
+}
+
+
+/*Ipad dọc(768 x 1024)*/
+
+@media screen and (max-width: 768px) {
+    .page__menu--icon {
+        display: none;
+    }
+    .page__menu {
+        justify-content: space-around;
+    }
+     :root {
+        --space: 10px;
+    }
+    .page__menu {
+        background-color: rgb(39, 39, 17);
+    }
+    .page__content--section{
+        margin-bottom: var(--space);
+    }
+    .page__content--slide{
+        margin-bottom: var(--space);
+    }
+    .page__content--image{
+        margin-bottom: var(--space);
+    }
+    .page__content--photo{
+        margin-bottom: var(--space);
+    }
+    .page__banner, .page__content--video, .page__content--discription, .page__content--map, .tour--item  {
+        margin-bottom: var(--space);
+    }
+}
+
+
+/*Điện thoại bản nhỏ 320px*/
+
+@media screen and (max-width: 320px) {
+    .page__menu--ul {
+        display: none;
+    }
+    .page__menu--icon {
+        display: block;
+    }
+    .btn-booknow {
+        display: none;
+    }
+    .page__menu {
+        justify-content: space-around;
+    }
+     :root {
+        --space: 5px;
+    }
+    .page__menu {
+        background-color: red;
+    }
+    .page__content--section{
+        margin-bottom: var(--space);
+    }
+    .page__content--slide{
+        margin-bottom: var(--space);
+    }
+    .page__content--image{
+        margin-bottom: var(--space);
+    }
+    .page__content--photo{
+        margin-bottom: var(--space);
+    }
+    .page__banner, .page__content--video, .page__content--discription, .page__content--map, .tour--item  {
+        margin-bottom: var(--space);
+    }
+}
